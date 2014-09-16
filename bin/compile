@@ -16,9 +16,7 @@ source $bp_dir/bin/common.sh
 
 # Maxmind GeoIP C Library support.
 # See [`bin/geoip`](geoip.html).
-bpwatch start geoip_install
-  source $bp_dir/bin/geoip
-bpwatch stop geoip_install
+source $bp_dir/bin/geoip
 
 # Output npm debug info on error
 trap cat_npm_debug_log ERR
