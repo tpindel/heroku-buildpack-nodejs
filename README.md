@@ -1,7 +1,11 @@
-Heroku Buildpack for Node.js
+Heroku Buildpack for Node.js (GeoIP)
 ============================
 
-This is the official [Heroku buildpack](http://devcenter.heroku.com/articles/buildpacks) for Node.js apps. If you fork this repository, please **update this README** to explain what your fork does and why it's special.
+This is fork of the official [Heroku buildpack](http://devcenter.heroku.com/articles/buildpacks) for Node.js apps.
+
+This extends the nodejs buildpack with installing the Maxmind GeoIP C Library and downloading the GeoIP City Database.
+
+If you fork this repository, please **update this README** to explain what your fork does and why it's special.
 
 
 How it Works

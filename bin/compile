@@ -14,6 +14,12 @@ bp_dir=$(cd $(dirname $0); cd ..; pwd)
 # Load some convenience functions like status(), echo(), and indent()
 source $bp_dir/bin/common.sh
 
+# Maxmind GeoIP C Library support.
+# See [`bin/geoip`](geoip.html).
+bpwatch start geoip_install
+  source $bp_dir/bin/geoip
+bpwatch stop geoip_install
+
 # Output npm debug info on error
 trap cat_npm_debug_log ERR
 
